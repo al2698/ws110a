@@ -1,12 +1,11 @@
 function table99(){
-    let table = [];
-    for (let i = 1; i <= 9; i++){
-        let row = [i]
-        for (let j = 1; j <= 9; j++){
-            row.push(i*j)
+    document.write("<table>");
+    for (let i = 0; i <= 9; i++){
+        for (let j = 0; j <= 9; j++){
+            if(i==0){document.write(`<th></th>`)}
+            else if(i == 1){document.write(`<th>${i*j}</th>`)}
+            else if(j == 1){document.write(`<tr><th>${i*j}</th>`)}
+            else{document.write(`<td>${i*j}</td>`)}
         }
-        table.push(row.join(' '))
     }
-    return '  1 2 3 4 5 6 7 8 9\n'+table.join('\n')
 }
-console.log(table99())
