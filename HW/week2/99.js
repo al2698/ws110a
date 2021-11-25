@@ -1,5 +1,5 @@
 function table99(){
-    document.write("<table>");
+    document.write("<table border=1>");
     for (let i = 0; i <= 9; i++){
         for (let j = 0; j <= 9; j++){
             if(i==0){document.write(`<th></th>`)}
