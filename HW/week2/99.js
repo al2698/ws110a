@@ -1,6 +1,6 @@
 function table99(){
     document.write("<table border=1>");
-    document.write(`<tr><td></td>`)
+    document.write(`<tr><th></th>`)
     for (let i = 1; i <= 9; i++){
         document.write(`<th>${i}</th>`)
     }
