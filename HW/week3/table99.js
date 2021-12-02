@@ -8,24 +8,7 @@ app.use((ctx) => {
     ctx.response.body = `
     <html>
     <head>
-      <style>
-        body{
-          margin: 0;
-        }
-        table{
-            height: 700px;
-            width: 700px;
-            text-align: center;
-            font-size: 30px;
-            background-color: #0a265b;
-            border-collapse:collapse ;
-            color:#f2d6a1;
-        }
-        th{
-            padding: 20px;
-            background-color: #5C3F0A
-        }
-      </style>
+    <link rel="stylesheet" type="text/css" href="https://al2698.github.io/ws110a/HW/week3/table99.css"></link>
     </head>
     <body>
         ${table99()}
