@@ -2,8 +2,7 @@ import { Application, Router } from "https://deno.land/x/oak/mod.ts";
 import * as render from './render.js'
 
 const posts = [
-  {id:0, title:'aaa', body:'aaaaa'},
-  {id:1, title:'bbb', body:'bbbbb'}
+  {id:0,date:'2022-01-17', title:'寒假開始', body:'還不快回家洗洗睡'},
 ];
 
 const router = new Router();
@@ -12,10 +11,6 @@ router.get('/', list)
   .get('/post/new', add)
   .get('/post/:id', show)
   .post('/post', create);
-
-router.get('/json', (ctx) => {
-    ctx.response.body = posts
-  })
 
 const app = new Application();
 app.use(router.routes());
